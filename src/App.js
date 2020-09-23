@@ -6,17 +6,17 @@ import Amazon from './Amazon';
 
 const favS = "netflix";
 
-const FavSeries = () => {
-  if(favS == 'netflix'){
-    return (
-      <Netflix/>
-    )
-  }else{
-    return (
-      <Amazon/>
-    )
-  }
-}
+// const FavSeries = () => {
+//   if(favS == 'netflix'){
+//     return (
+//       <Netflix/>
+//     )
+//   }else{
+//     return (
+//       <Amazon/>
+//     )
+//   }
+// }
 
 const App = () => (
   <>
@@ -32,7 +32,8 @@ const App = () => (
         />
       )
     } )} */}
-    <FavSeries/>
+    {/* <FavSeries/> */}
+    { favS == 'netflix' ? <Netflix/> : <Amazon/> }
      
   </>
 );
