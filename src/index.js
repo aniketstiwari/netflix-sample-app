@@ -1,17 +1,29 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {Card} from './Card';
+ 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDom.render(
+  <>
+    <Card
+      imgsrc="https://wallpapercave.com/wp/90XU9Sz.jpg"
+      title="A netflix original Series"
+      seriesname="Walking Dead"
+      link="https://www.netflix.com/in/title/70177057"
+    />
+    <Card
+      imgsrc="https://wallpapercave.com/wp/wp3999805.jpg"
+      title="A netflix original Series"
+      seriesname="Lost"
+      link="https://www.netflix.com/kr-en/title/70136118"
+    />
+    <Card
+      imgsrc="https://wallpapercave.com/wp/wp1935737.jpg"
+      title="A netflix original Series"
+      seriesname="13 reasons why"
+      link="https://www.netflix.com/in/title/80117470"
+    />
+  </>,
+  document.getElementById('root') 
+)
