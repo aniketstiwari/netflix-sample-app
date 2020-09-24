@@ -21,7 +21,7 @@ const favS = "netflix";
 const App = () => (
   <>
     <h1 className="heading_style">List of top 3 netflix series</h1>
-    {/* {Sdata.map((val) => {
+     {Sdata.map((val) => {
       return (
         <Card
           key={val.id}
@@ -31,9 +31,9 @@ const App = () => (
           link={val.links}
         />
       )
-    } )} */}
+    } )}
     {/* <FavSeries/> */}
-    { favS == 'netflix' ? <Netflix/> : <Amazon/> }
+    {/* { favS == 'netflix' ? <Netflix/> : <Amazon/> } */}
      
   </>
 );
